@@ -1,0 +1,6 @@
+if SHIELD_TESTPAD
+
+config ZMK_KEYBOARD_NAME
+    default "TestPad"
+
+endif

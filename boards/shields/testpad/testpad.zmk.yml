@@ -1,0 +1,6 @@
+file_format: "1"
+id: testpad
+name: TestPad
+type: shield
+features:
+  - keys
