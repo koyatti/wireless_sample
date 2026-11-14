@@ -4,3 +4,4 @@ name: TestPad
 type: shield
 features:
   - keys
+  - studio

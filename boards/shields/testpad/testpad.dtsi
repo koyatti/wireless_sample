@@ -1,0 +1,27 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "TestPad 2x2";
+
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+
+        /*
+         * Key positions:
+         *
+         *  Q   W
+         *  A   S
+         *
+         * Width / Height: 100 = 1u
+         * X / Y: position in centi-keyunits
+         */
+        keys
+            = <&key_physical_attrs 100 100   0   0  0  0  0>
+            , <&key_physical_attrs 100 100 100   0  0  0  0>
+            , <&key_physical_attrs 100 100   0 100  0  0  0>
+            , <&key_physical_attrs 100 100 100 100  0  0  0>
+            ;
+    };
+};

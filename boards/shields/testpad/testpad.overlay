@@ -1,5 +1,6 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "testpad.dtsi"
 
 / {
     chosen {
@@ -36,12 +37,5 @@
             RC(0, 0) RC(0, 1)
             RC(1, 0) RC(1, 1)
         >;
-    };
-
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "2x2";
-        kscan = <&kscan0>;
-        transform = <&default_transform>;
     };
 };
